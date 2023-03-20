@@ -1,0 +1,9 @@
+.layout_sidebar {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: $padding-l;
+}
+
+.sidebar_container {
+
+}

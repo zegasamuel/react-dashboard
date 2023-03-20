@@ -1,0 +1,42 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+// Color system
+
+// Shades of grey
+$white: #ffffff;
+$gray-100: #f3f7fa;
+$gray-200: #f5f8fb;
+$gray-300: #F0F3F6;
+$gray-400: #eaedf2;
+$gray-500: #d1d7e0;
+$gray-600: #93a5be;
+$gray-700: #66799e;
+$gray-800: #506690;
+$gray-900: #4A5073;
+$dark : #262B40;
+$black : #2e3650;
+
+
+// body
+$body-bg: #FCFEFF;
+$body-color: $gray-900;
+
+// property
+$padding-xxl : 32px;
+$padding-xl : 24px;
+$padding-l : 16px;
+$padding-m : 8px;
+$padding-s : 4px;
+$padding-xs : 2px;
+
+$box-shadow: 14px 17px 40px 4px rgba(112, 144, 176, 0.06);
+$box-shadow-lg: 14px 17px 40px 4px rgba(112, 144, 176, 0.18);
+
+$border-radius-xl: 40px;
+$border-radius-l: 30px;
+$border-radius-m: 20px;
+$border-radius-s: 10px;
+$border-radius-xs: 5px;

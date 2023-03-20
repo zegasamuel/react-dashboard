@@ -1,0 +1,13 @@
+// Change variables here
+@import "scss/variables";
+
+// Global
+body {
+    background-color: $body-bg;
+    margin: 24px;
+    font-family: 'DM Sans';
+}
+
+// Layout
+@import "scss/layout";
+@import "scss/text"

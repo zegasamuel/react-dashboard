@@ -1,0 +1,28 @@
+.sidenav_container {
+    height: 91vh;
+    background-color: #fff;
+    border-radius: $border-radius-xl;
+    padding: $padding-l;
+    box-shadow: $box-shadow
+}
+
+.nav_menu {
+    display: flex;
+    flex-direction: column;
+    &_item {
+        color: $body-color;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        margin: 20px 20px;
+        svg {
+            width: 25px;
+            height: 25px;
+        }
+        span {
+            margin-left: 20px;
+            font-size: 17px;
+        }
+    }
+}

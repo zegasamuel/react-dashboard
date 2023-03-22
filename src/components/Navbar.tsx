@@ -6,11 +6,9 @@ import { Link } from 'react-router-dom'
 import { IconContext } from 'react-icons'
 
 function Navbar() {
-    const [sidebar, setSidebar] = useState(false)
-
     return (
         <div className="sidenav_container">
-            <h1 className="align-center">Dashboard</h1>
+            <h2 className="text-center">Dashboard</h2>
             <IconContext.Provider value={{ color: '#413EFB' }}>
               <div className='nav_menu'>
                 {sidebarData.map((item, key) => (
@@ -35,20 +33,20 @@ const sidebarData = [
         cName: 'nav-text',
     },
     {
-        title: 'Reports',
-        path: '/reports',
+        title: 'Chart',
+        path: '/dashboard/chart',
         icon: <IoIcons.IoIosPaper />,
         cName: 'nav-text',
     },
     {
-        title: 'Products',
-        path: '/products',
+        title: 'LoginSidebar',
+        path: '/dashboard/login',
         icon: <FaIcons.FaCartPlus />,
         cName: 'nav-text',
     },
     {
-        title: 'Team',
-        path: '/team',
+        title: 'Auth',
+        path: '/auth',
         icon: <IoIcons.IoMdPeople />,
         cName: 'nav-text',
     },

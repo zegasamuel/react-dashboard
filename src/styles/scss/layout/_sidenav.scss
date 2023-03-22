@@ -1,7 +1,8 @@
 .sidenav_container {
-    height: 91vh;
+    height: calc(96vh - $padding-xxl);
+    margin: $padding-l 0 $padding-l $padding-l;
     background-color: #fff;
-    border-radius: $border-radius-xl;
+    border-radius: $border-radius-l;
     padding: $padding-l;
     box-shadow: $box-shadow
 }

@@ -4,10 +4,17 @@
 // Global
 body {
     background-color: $body-bg;
-    margin: 24px;
-    font-family: 'DM Sans';
+    margin: 0 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+:root{
+    color: $black;
 }
 
 // Layout
 @import "scss/layout";
-@import "scss/text"
+@import "scss/text";
+@import "scss/component";
+@import "scss/util";
+@import "scss/page";

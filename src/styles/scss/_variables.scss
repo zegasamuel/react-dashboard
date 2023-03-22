@@ -1,7 +1,3 @@
-// Variables
-//
-// Variables should follow the `$component-state-property-size` formula for
-// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
 // Color system
 
@@ -17,11 +13,11 @@ $gray-700: #66799e;
 $gray-800: #506690;
 $gray-900: #4A5073;
 $dark : #262B40;
-$black : #2e3650;
+$black : #1C254B;
 
 
 // body
-$body-bg: #FCFEFF;
+$body-bg: #F4F7FE;
 $body-color: $gray-900;
 
 // property
@@ -40,3 +36,16 @@ $border-radius-l: 30px;
 $border-radius-m: 20px;
 $border-radius-s: 10px;
 $border-radius-xs: 5px;
+
+$space-size: 100,90,80,70,60,50,40,32,24,16,8,4,2,0;
+$font-weight-size: 100,200,300,400,500,600,700,800,900;
+
+
+
+$font-size-base:              1rem; // Assumes the browser default, typically `16px`
+$font-size-xs:                ($font-size-base * .75);
+$font-size-sm:                ($font-size-base * .875);
+$font-size-md:                ($font-size-base * 1);
+$font-size-lg:                ($font-size-base * 1.25);
+$font-size-xl:                ($font-size-base * 1.5);
+$font-size-xxl:               ($font-size-base * 2);

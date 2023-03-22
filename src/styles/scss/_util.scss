@@ -1,0 +1,78 @@
+.overflow-auto {
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 100vh;
+}
+
+
+@each $size in $space-size {
+    .m-#{$size} {
+        margin-top: $size+px;
+        margin-left: $size+px;
+        margin-right: $size+px;
+        margin-bottom: $size+px;
+    }
+    .mt-#{$size} {
+        margin-top: $size+px;
+    }
+    .mb-#{$size} {
+        margin-bottom: $size+px;
+    }
+    .ml-#{$size} {
+        margin-left: $size+px;
+    }
+    .mr-#{$size} {
+        margin-right: $size+px;
+    }
+    .mv-#{$size} {
+        margin-top: $size+px;
+        margin-bottom: $size+px;
+    }
+    .mh-#{$size} {
+        margin-right: $size+px;
+        margin-left: $size+px;
+    }
+    .p-#{$size} {
+        padding-top: $size+px;
+        padding-left: $size+px;
+        padding-right: $size+px;
+        padding-bottom: $size+px;
+    }
+    .pt-#{$size} {
+        padding-top: $size+px;
+    }
+    .pb-#{$size} {
+        padding-bottom: $size+px;
+    }
+    .pl-#{$size} {
+        padding-left: $size+px;
+    }
+    .pr-#{$size} {
+        padding-right: $size+px;
+    }
+    .pv-#{$size} {
+        padding-top: $size+px;
+        padding-bottom: $size+px;
+    }
+    .ph-#{$size} {
+        padding-right: $size+px;
+        padding-left: $size+px;
+    }
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.clickable {
+    cursor: pointer;
+}
+

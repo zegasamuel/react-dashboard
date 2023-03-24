@@ -1,13 +1,13 @@
 .layout-sidebar {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    column-gap: $padding-s;
+    column-gap: $padding-l;
     // padding-right: $padding-l;
 }
 
 .layout-right-sidebar {
     display: grid;
     grid-template-columns: 4fr 1.8fr;
-    column-gap: $padding-s;
-    padding-right: $padding-xl;
+    column-gap: $padding-l;
+    margin: $padding-l 0;
 }

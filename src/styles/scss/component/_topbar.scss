@@ -1,8 +1,9 @@
 .topbar-container {
-    background-color: #f4f7fe2d;
+    z-index: 1000;
+    background-color: #f4f7fe00;
     transition-duration: 0.25s,0.25s,0.25s,0s;
     transition-timing-function: linear,linear,linear,linear;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     padding: $padding-m $padding-l;
     border-radius: $border-radius-s;
     position: fixed;

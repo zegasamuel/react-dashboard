@@ -9,13 +9,13 @@ import {
 
 export default function Home() {
     return (
-        <div className="overflow-auto ">
+        <div className="overflow-auto home-container">
             <TopBar />
             <RightSidebarLayout>
                 <div className="mt-100">
                     <div className="container-card-2to1">
                         <DoubleLineChart />
-                        <div className="card-bg pv-16 ph-32"></div>
+                        <DoubleLineChart />
                     </div>
                     <div className="container-card-3row">
                         <div className="card-bg pv-16 ph-32">
@@ -27,11 +27,11 @@ export default function Home() {
                                 molestiae qui dicta?
                             </p>
                         </div>
-                        <div className="card-bg pv-16 ph-32"></div>
-                        <div className="card-bg pv-16 ph-32"></div>
+                        <DoubleLineChart />
+                        <DoubleLineChart />
                     </div>
                     <div className="container-card-1to2">
-                        <div className="card-bg pv-16 ph-32"></div>
+                        <DoubleLineChart />
                         <div className="card-bg pv-16 ph-32">
                             <p>
                                 Lorem ipsum dolor sit amet consectetur
@@ -45,7 +45,9 @@ export default function Home() {
                 </div>
                 <div className="mt-100">
                     <div className="card-right-side">
-                        <h3>Your Card</h3>
+                        <DoubleLineChart />
+                        <DoubleLineChart />
+                        <DoubleLineChart />
                     </div>
                 </div>
             </RightSidebarLayout>
@@ -71,7 +73,7 @@ const DoubleLineChart = () => {
                 </div>
                 <p className="color-grey">Monthly</p>
             </div>
-            <div className='home-line-chart'>
+            <div className="home-line-chart">
                 <LineChart
                     chartData={lineChartDataTotalSpent}
                     chartOptions={lineChartOptionsTotalSpent}

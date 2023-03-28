@@ -1,0 +1,73 @@
+.text-center {
+    text-align: center;
+}
+
+@each $size in $font-weight-size {
+    .fw-#{$size} {
+        font-weight: $size;
+    }
+}
+
+.fs-xxs {
+    font-size: ($font-size-base * .65);
+    letter-spacing: ($font-size-base * .03);
+}
+
+.fs-xs {
+    font-size: ($font-size-base * .75);
+    letter-spacing: ($font-size-base * .03);
+}
+
+.fs-sm {
+    font-size: ($font-size-base * .875);
+    letter-spacing: ($font-size-base * .03);
+}
+
+.fs-md {
+    font-size: ($font-size-base * 1);
+    letter-spacing: ($font-size-base * .02);
+}
+
+.fs-lg {
+    font-size: ($font-size-base * 1.25);
+    letter-spacing: ($font-size-base * .02);
+}
+
+.fs-xl {
+    font-size: ($font-size-base * 1.5);
+    letter-spacing: ($font-size-base * .02);
+}
+
+.fs-xxl {
+    font-size: ($font-size-base * 2);
+    letter-spacing: ($font-size-base * .01);
+}
+
+.color-grey {
+    color: #ABB5D4;
+}
+
+.color-green {
+    color: #00B574;
+}
+
+.color-white {
+    color: #fff;
+}
+
+
+.color-gold {
+    background: linear-gradient(to bottom, #cfc09f 15%, #634f2c 15%, #cfc09f 26%, #cfc09f 27%, #ffecb3 40%, #3a2c0f 78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #fff;
+}
+
+.color-gold::after {
+    background: none;
+    text-shadow:
+        -1px 0 1px #c6bb9f,
+        0 1px 1px #c6bb9f,
+        5px 5px 10px rgba(0, 0, 0, 0.4),
+        -5px -5px 10px rgba(0, 0, 0, 0.4);
+}

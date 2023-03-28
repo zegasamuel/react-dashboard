@@ -1,0 +1,38 @@
+// Change variables here
+@import "variables";
+
+// Global
+:root {
+    font-family: 'DM Sans', sans-serif;
+    box-sizing: border-box;
+    color: $black;
+}
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+body {
+    background-color: $body-bg;
+    display: block;
+    letter-spacing: ($font-size-base * .02);
+
+}
+
+a {
+    color: $body-color;
+}
+
+// Layout
+@import "layout";
+@import "text";
+@import "component";
+@import "util";
+@import "page";

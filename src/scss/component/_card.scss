@@ -1,0 +1,62 @@
+.card-right-side {
+    width: auto;
+    background-color: #fff;
+    border-radius: $border-radius-m;
+    padding: $padding-l;
+    box-shadow: $box-shadow
+}
+
+.container-card-2to1 {
+    display: grid;
+    grid-template-columns: 1.9fr 1.1fr;
+    column-gap: $padding-l;
+}
+
+.container-card-1to2 {
+    display: grid;
+    grid-template-columns: 1.9fr 1.1fr;
+    column-gap: $padding-l;
+}
+
+.container-card-3row {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+    column-gap: $padding-l;
+}
+
+.card-bg {
+    width: auto;
+    max-height: 100%;
+    margin-bottom: $padding-l;
+    background-color: #fff;
+    border-radius: $border-radius-m;
+    box-shadow: $box-shadow
+}
+
+.card-bg-blue-gradient {
+    width: auto;
+    background: -moz-linear-gradient(85deg, rgba(4, 13, 100, 1) 0%, rgba(41, 51, 137, 1) 100%);
+    background: -webkit-linear-gradient(85deg, rgba(4, 13, 100, 1) 0%, rgba(41, 51, 137, 1) 100%);
+    background: -o-linear-gradient(85deg, rgba(4, 13, 100, 1) 0%, rgba(41, 51, 137, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#293389', endColorstr='#040D64', GradientType=0);
+    background: -ms-linear-gradient(85deg, rgba(4, 13, 100, 1) 0%, rgba(41, 51, 137, 1) 100%);
+    background: linear-gradient(85deg, rgba(4, 13, 100, 1) 0%, rgba(41, 51, 137, 1) 100%);
+    border-radius: $border-radius-m;
+    box-shadow: $box-shadow;
+    color: $white;
+}
+
+.card-debit {
+    background: url("https://i.pinimg.com/564x/d9/fa/85/d9fa8519448fab75a4db4084144fa448.jpg");
+    color: #fff;
+    background-size: cover;
+    margin-bottom: $padding-l;
+    border-radius: $border-radius-m;
+    box-shadow: $box-shadow-lg;
+    padding: $padding-s $padding-l;
+}
+
+.card-debit-mastercard {
+    opacity: 0.8;
+}

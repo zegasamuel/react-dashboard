@@ -1,0 +1,30 @@
+.sidenav-container {
+    width: auto;
+    height: calc(96vh - $padding-xxl);
+    margin: $padding-l 0 $padding-l $padding-l;
+    background-color: #fff;
+    border-radius: $border-radius-l;
+    padding: $padding-l;
+    box-shadow: $box-shadow
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+
+    &-item {
+        &-submenu {
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height .8s ease-out;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &:target &-submenu {
+            max-height: 20rem;
+        }
+
+    }
+
+}

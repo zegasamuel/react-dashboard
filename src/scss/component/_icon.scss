@@ -1,0 +1,80 @@
+.icon-blue-active {
+    color: #413EFB;
+}
+
+.icon-blue {
+    color: #527AFF;
+}
+
+.icon-grey {
+    color: #A0AEC0;
+}
+
+.icon-black {
+    color: #363737;
+}
+
+.icon-green {
+    color: #00B574;
+}
+.icon-orange {
+    color: #D69E2E;
+}
+
+.icon-white {
+    color: '#fff'
+}
+
+.icon-bg-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-box {
+    width: 35px;
+    height: 35px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-bg-gray {
+    background-color: #F4F7FE;
+}
+
+.icon-xxs {
+    font-size: ($icon-size-base * .6);
+}
+
+.icon-xs {
+    font-size: ($icon-size-base * .75);
+}
+
+.icon-sm {
+    font-size: ($icon-size-base * .875);
+}
+
+.icon-md {
+    font-size: ($icon-size-base * 1);
+}
+
+.icon-lg {
+    font-size: ($icon-size-base * 1.25);
+}
+
+.icon-xl {
+    font-size: ($icon-size-base * 1.5);
+}
+
+.icon-xxl {
+    font-size: ($icon-size-base * 2);
+}
+
+.icon-big {
+    font-size: ($icon-size-base * 2.5);
+}

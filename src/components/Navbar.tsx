@@ -1,24 +1,45 @@
-import React, { useState } from 'react'
-import * as FaIcons from 'react-icons/fa'
-import * as AiIcons from 'react-icons/ai'
-import * as IoIcons from 'react-icons/io'
 import { Link } from 'react-router-dom'
-import { IconContext } from 'react-icons'
+import {
+    IconHome,
+    IconIosPaper,
+    IconCart,
+    IconPeople,
+    IconMessage,
+    IconHelpCircle,
+    IconArrowDown,
+} from '../components'
 
 function Navbar() {
     return (
-        <div className="sidenav_container">
+        <div className="sidenav-container">
             <h2 className="text-center">Dashboard</h2>
-            <IconContext.Provider value={{ color: '#413EFB' }}>
-              <div className='nav_menu'>
+            <div className="nav-menu mt-32">
                 {sidebarData.map((item, key) => (
-                    <Link className='nav_menu_item' key={key} to={item.path}>
-                        {item.icon}
-                        <span>{item.title}</span>
-                    </Link>
+                    <li className="nav-menu-item mh-24 mv-16" id={`${item.title}`}>
+                        <a
+                            className="nav-menu-item-btn d-flex justify-space-between align-center"
+                            href={`#${item.title}`}
+                        >
+                            <div className="d-flex align-center">
+                                {item.icon}{' '}
+                                <p className="fs-md">{item.title}</p>
+                            </div>
+                            <IconArrowDown className="icon-grey" />
+                        </a>
+                        <div className="ml-40 nav-menu-item-submenu">
+                            {sidebarData.map((item, key) => (
+                                <Link
+                                    className="nav_menu_item color-grey mv-4"
+                                    key={key}
+                                    to={item.path}
+                                >
+                                    {item.title}
+                                </Link>
+                            ))}
+                        </div>
+                    </li>
                 ))}
-              </div>
-            </IconContext.Provider>
+            </div>
         </div>
     )
 }
@@ -29,37 +50,39 @@ const sidebarData = [
     {
         title: 'Home',
         path: '/dashboard',
-        icon: <AiIcons.AiFillHome />,
+        icon: <IconHome className="icon-blue-active mr-16 mb-2 icon-sm" />,
         cName: 'nav-text',
     },
     {
         title: 'Chart',
         path: '/dashboard/chart',
-        icon: <IoIcons.IoIosPaper />,
+        icon: <IconIosPaper className="icon-blue-active mr-16 mb-2 icon-sm" />,
         cName: 'nav-text',
     },
     {
         title: 'LoginSidebar',
         path: '/dashboard/login',
-        icon: <FaIcons.FaCartPlus />,
+        icon: <IconCart className="icon-blue-active mr-16 mb-2 icon-sm" />,
         cName: 'nav-text',
     },
     {
         title: 'Auth',
         path: '/auth',
-        icon: <IoIcons.IoMdPeople />,
+        icon: <IconPeople className="icon-blue-active mr-16 mb-2 icon-sm" />,
         cName: 'nav-text',
     },
     {
         title: 'Messages',
         path: '/messages',
-        icon: <FaIcons.FaEnvelopeOpenText />,
+        icon: <IconMessage className="icon-blue-active mr-16 mb-2 icon-sm" />,
         cName: 'nav-text',
     },
     {
         title: 'Support',
         path: '/support',
-        icon: <IoIcons.IoMdHelpCircle />,
+        icon: (
+            <IconHelpCircle className="icon-blue-active mr-16 mb-2 icon-sm" />
+        ),
         cName: 'nav-text',
     },
 ]

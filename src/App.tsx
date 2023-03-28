@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes, Navigate, createBrowserRouter } from 'react-router-dom'
 import { Dashboard, Login, Home, Charting } from './pages'
-import './styles/style.scss'
+import './scss/style.scss'
 
 export default function App() {
     return (
